@@ -1,14 +1,12 @@
 package main
 
-import "fmt"
+// func main() {
+// 	var name string
+// 	var namePointer *string
 
-func main() {
-	var name string
-	var namePointer *string
-
-	fmt.Println("Name:", name)
-	fmt.Println("Name *:", namePointer)
-}
+// 	fmt.Println("Name:", name)
+// 	fmt.Println("Name *:", namePointer)
+// }
 
 // // ******************************************************
 

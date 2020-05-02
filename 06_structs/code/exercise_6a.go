@@ -32,7 +32,8 @@ func describeGroup(g Group) string {
 
 	desc := fmt.Sprintf("This user group has %d. The newest user is %s %s. Accepting New Users: %t", len(g.users), g.newestUser.FirstName, g.newestUser.LastName, g.spaceAvailable)
 	return desc
-}
+}gss
+
 
 func main() {
 	u := User{ID: 1, FirstName: "Marilyn", LastName: "Monroe", Email: "marilyn.monroe@gmail.com"}

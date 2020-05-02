@@ -1,4 +1,3 @@
-/*
 package main
 
 import "fmt"
@@ -9,15 +8,18 @@ type User struct {
 	FirstName, LastName, Email string
 }
 
-func describeUser(u User) string {
+// func describeUser(u User) string {
+// 	desc := fmt.Sprintf("Name: %s %s, Email: %s", u.FirstName, u.LastName, u.Email)
+// 	return desc
+// }
+
+func (u *User) describe() string {
 	desc := fmt.Sprintf("Name: %s %s, Email: %s", u.FirstName, u.LastName, u.Email)
 	return desc
 }
 
 func main() {
 	user := User{ID: 1, FirstName: "Marilyn", LastName: "Monroe", Email: "marilyn.monroe@gmail.com"}
-
-	desc := describeUser(user)
+	desc := user.describe()
 	fmt.Println(desc)
 }
-*/
